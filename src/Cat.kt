@@ -1,13 +1,23 @@
 class Cat (val name: String, var age: Int, var weight: Int) {
 
-    fun walk() {
-        weight--
+    public fun walk(distance: Int) : Boolean
+    {
+        if(weight - distance >= 5) {
+            weight -= distance
+            return true
+        }
+        return false
     }
 
     override fun toString() : String {
         return "Name: $name Age: $age Weight: $weight"
     }
     fun eat() {
-        weight ++
+        if(weight < 20){
+            weight ++
+        }
+        else println("$name is too full")
+
+
     }
 }

@@ -5,4 +5,9 @@ fun main() {
     clyde.walk()
     println(binnie)
     println(clyde)
+    binnie.eat()
+    clyde.eat()
+    println(binnie)
+    println(clyde)
+
 }

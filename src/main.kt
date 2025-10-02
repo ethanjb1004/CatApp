@@ -3,7 +3,8 @@ fun main() {
     val clyde = Cat("Clyde", 5, 5)
     val flathead = Cat("Flathead", 7, 10)
     val cupra = Cat("Cupra", 2, 7)
-
+    binnie.eat(1)
+    println(binnie)
 
 
 }
